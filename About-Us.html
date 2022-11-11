@@ -4,6 +4,21 @@
     <meta charset = "utf-8">
 	<title>About Us</title>
     <link rel = "stylesheet" type = "text/css" href = "CSS/WanderLust_CSS.css">
+    <style>
+      form{
+          color: rgb(66, 66, 77);
+          width: 45%;
+          height: 50%;
+          background-color: rgb(205, 209, 227);
+          box-shadow: 3px 3px 2px 7px rgb(99, 99, 133);
+          border-radius: 10px;
+      }
+      .relative{
+        position: relative;
+        left:50px;
+      top:5px;}
+
+  </style>
 </head>
 <body>
     <div>
@@ -160,21 +175,21 @@
 
         
 
-        <div>
+        <div >
             <form method = "post">
-            <p>
+            <h4 class="relative" style ="color:rgb(19, 27, 115);">
             please fill this feedback form
-            </p>
+            </h4>
           
            <p>
-           <label>Name: <input type = "text"></label>
+           <label class="relative">Name: <input style="border-radius: 10px;" type = "text"></label>
            </p>
            <p>
-           <label>E-mail: <input type = "email"></label>
+           <label class="relative">E-mail: <input style="border-radius: 10px;" type = "email"></label>
            </p>
           
-           <p><label for = "txtList">How would you rate us:
-            <input type = "text" id = "txtList" 
+           <p class="relative"><label for = "txtList">How would you rate us:
+            <input style="border-radius: 10px;" type = "text" id = "txtList" 
                placeholder = "Rating" list = "rating" >
             <datalist id = "rating">
                <option value = "Wonderful">
@@ -186,16 +201,16 @@
           
 
 
-          <h4>
+          <h4 class="relative" style="color:rgb(111, 19, 19);" >
           Additional Comments?
           </h4>
           
-          <p>
-          <label>Comments:<br><textarea rows="3" cols = "50" placeholder = "Enter your coments here."></textarea></label>
+          <p class="relative">
+          <label>Comments:<br><textarea style="border-radius: 10px;" rows="3" cols = "50" placeholder = "Enter your coments here."></textarea></label>
           </p>
           
-           <p>
-           <input type = "submit" value = "Submit">
+           <p class="relative">
+           <input style="color: green; " type = "submit" value = "Submit">
            <input type = "reset" value = "Clear">
            </p>
            </form>
