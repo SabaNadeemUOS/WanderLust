@@ -80,6 +80,8 @@ body img {
  
   margin-right: auto;
   margin-left: auto;
+  border-radius: 8px;
+  
 }
 /*end of Images Styling*/
 
@@ -250,7 +252,7 @@ footer {
   width: 65%;
   display: block;
   border-radius: 10px;
-  
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 
@@ -290,7 +292,8 @@ footer {
  /*paragraphs, heading styling*/
   h3{
   font-size: 30px;
-  
+
+  font-family: "Bodoni MT";
   text-align: center;
   color: rgb(170, 169, 169);
   background-color:rgb(42, 42, 42) ;
@@ -299,6 +302,7 @@ footer {
   padding: 15px;
   margin-right: auto;
   margin-left: auto;
+  box-shadow: 5px 5px 20px;
   }
 
   body p:not(footer p, .row p, form p), .discription-list{
@@ -308,11 +312,12 @@ footer {
     font-size: x-large;
     border-radius: 10px;
     padding: 20px;
+    font-family: "Times New Roman";
     
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    
+    box-shadow: 5px 5px 20px; 
   }
 
   
@@ -330,6 +335,7 @@ footer {
     border-radius: 15px;
     text-align: center;
 font-size: 50px;
+font-family: "Bodoni MT";
   }
 
    figcaption {
@@ -359,6 +365,8 @@ h1 {
   text-shadow: -5px 5px 5px grey;
   text-align: center;
   color: rgb(39, 38, 38);
+  font-family: "Bodoni MT";
+  font-weight: bold;
 }
  /*end of paragraphs, heading styling*/
 
