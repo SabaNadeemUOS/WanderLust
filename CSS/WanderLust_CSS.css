@@ -378,15 +378,19 @@ form{
     height: 15px;
     top: 80%;
     right: 51%;
-    background-color: white;
+    background-color: rgb(68, 82, 127);
+    /*animation:name duration timing function iteration count*/
+    /*timing function linear means the animation will have the same speed from start to end*/
     animation: highlight 1.5s linear infinite;
 }
 @keyframes highlight {
     100% {
+        /*At 100% increase size of marker by 5 and make opacity to zero so this gives a fading effect*/
         transform: scale(5);
         opacity: 0;
     }
 }
+/*the rst of the classes are for setting the positions of the markers*/
 .map .marker2 {
     right: 36%;
     top: 99%;
