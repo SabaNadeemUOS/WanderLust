@@ -297,7 +297,7 @@ footer {
   text-align: center;
   color: rgb(170, 169, 169);
   background-color:rgb(42, 42, 42) ;
-  width: 65%;
+  width: 55%;
   border-radius: 10px;
   padding: 15px;
   margin-right: auto;
@@ -368,6 +368,11 @@ h1 {
   font-family: "Bodoni MT";
   font-weight: bold;
 }
+
+/*hilighting text styling*/
+::selection{
+  background: rgb(123, 133, 166);
+}
  /*end of paragraphs, heading styling*/
 
 
@@ -417,4 +422,20 @@ form{
 .map .marker5 {
     top: 70%;
     right: 47%;
+}
+
+
+/*Animation*/
+
+/*logo Animation*/
+.logo-img {
+  animation-name: fadeInAnimation ;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes fadeInAnimation {
+  0% {opacity: 0;}
+  100% {opacity: 1;width: 35%;}
 }
