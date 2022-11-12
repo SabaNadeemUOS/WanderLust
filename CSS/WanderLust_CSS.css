@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@528&display=swap');/*imported font*/
 /*background image*/
 body {
   background-image: linear-gradient(rgb(210, 210, 210), rgb(255, 255, 255));
@@ -228,9 +229,23 @@ html {
 
 
 /*--footer Styling--*/
-
+footer {
+    background-color: rgb(68, 82, 127);/*background color*/
+}
 .footer-img {width:10px;}
+.footertext {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
 
+.footerlist {
+    list-style-type: none;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-align: center;
+}
  figure img{
   width: 65%;
   display: block;
@@ -239,7 +254,39 @@ html {
 }
 
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
 
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: 110%;
+    }
+    /*making the arrow*/
+        .tooltip .tooltiptext::after {
+            content: "";/*empty content*/
+            position: absolute;
+            top: 30%;/*setting position of arrow*/
+            right: 100%;
+            border-width: 5px;
+            border: transparent solid 5px;
+            border-right-color: black;
+        }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;/*after hovering make tooltip visible*/
+    }
+    /*end of footer styling*/
  /*paragraphs, heading styling*/
   h3{
   font-size: 30px;
@@ -322,4 +369,40 @@ h1 {
 form{
   margin-right: auto;
   margin-left: auto;
+}
+/*map styling on home page*/
+.map span {
+    position: absolute;
+    border-radius: 50px;
+    width: 15px;
+    height: 15px;
+    top: 80%;
+    right: 51%;
+    background-color: white;
+    animation: highlight 1.5s linear infinite;
+}
+@keyframes highlight {
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+.map .marker2 {
+    right: 36%;
+    top: 99%;
+}
+
+.map .marker3 {
+    right: 40%;
+    top: 90%;
+}
+
+.map .marker4 {
+    top: 110%;
+    right: 32%;
+}
+
+.map .marker5 {
+    top: 70%;
+    right: 47%;
 }
