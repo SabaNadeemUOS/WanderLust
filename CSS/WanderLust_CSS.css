@@ -386,7 +386,7 @@ form{
     height: 15px;
     top: 80%;
     right: 51%;
-    background-color: red;
+    background-color: rgb(68, 82, 127);
     /*animation:name duration timing function iteration count*/
     /*timing function linear means the animation will have the same speed from start to end*/
     animation: highlight 1.5s linear infinite;
