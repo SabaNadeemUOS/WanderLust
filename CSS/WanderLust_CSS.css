@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@528&display=swap');/*imported font*/
 /*background image*/
 body {
   background-image: linear-gradient(rgb(210, 210, 210), rgb(255, 255, 255));
@@ -80,8 +79,6 @@ body img {
  
   margin-right: auto;
   margin-left: auto;
-  border-radius: 8px;
-  
 }
 /*end of Images Styling*/
 
@@ -231,69 +228,22 @@ html {
 
 
 /*--footer Styling--*/
-footer {
-    background-color: rgb(68, 82, 127);/*background color*/
-}
-.footer-img {width:10px;}
-.footertext {
-    font-family: 'Dancing Script', cursive;
-    font-size: 1.5em;
-    color: white;
-    text-align: center;
-}
 
-.footerlist {
-    list-style-type: none;
-    font-family: 'Dancing Script', cursive;
-    color: white;
-    text-align: center;
-}
+.footer-img {width:10px;}
+
  figure img{
   width: 65%;
   display: block;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  
 }
 
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
 
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 120px;
-        background-color: black;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        top: -5px;
-        left: 110%;
-    }
-    /*making the arrow*/
-        .tooltip .tooltiptext::after {
-            content: "";/*empty content*/
-            position: absolute;
-            top: 30%;/*setting position of arrow*/
-            right: 100%;
-            border-width: 5px;
-            border: transparent solid 5px;
-            border-right-color: black;
-        }
-
-    .tooltip:hover .tooltiptext {
-        visibility: visible;/*after hovering make tooltip visible*/
-    }
-    /*end of footer styling*/
  /*paragraphs, heading styling*/
   h3{
   font-size: 30px;
-
-  font-family: "Bodoni MT";
+  
   text-align: center;
   color: rgb(170, 169, 169);
   background-color:rgb(42, 42, 42) ;
@@ -302,7 +252,6 @@ footer {
   padding: 15px;
   margin-right: auto;
   margin-left: auto;
-  box-shadow: 5px 5px 20px;
   }
 
   body p:not(footer p, .row p, form p), .discription-list{
@@ -312,12 +261,11 @@ footer {
     font-size: x-large;
     border-radius: 10px;
     padding: 20px;
-    font-family: "Times New Roman";
     
     text-align: center;
     margin-right: auto;
     margin-left: auto;
-    box-shadow: 5px 5px 20px; 
+    
   }
 
   
@@ -334,10 +282,35 @@ footer {
     margin-left: auto;
     border-radius: 15px;
     text-align: center;
-font-size: 50px;
-font-family: "Bodoni MT";
+    font-size: 50px;
   }
-
+  /* text in h2 animation */
+  .zoom-in-zoom-out
+  {
+    animation: zoom-in-zoom-out 0.8s;
+  }
+@keyframes zoom-in-zoom-out
+{
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1.5,1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/* logo animation */
+.logo-img{
+  animation-name: fadeInAnimation;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+  0% {opacity: 0;}
+  100%{opacity: 1;}
+}
    figcaption {
     text-align: center;
     font-style: italic;
@@ -360,61 +333,66 @@ font-family: "Bodoni MT";
   padding-bottom: 0.5px;
 }
 
-h1 {
-  font-size: 80px;
-  text-shadow: -5px 5px 5px grey;
-  text-align: center;
-  color: rgb(39, 38, 38);
-  font-family: "Bodoni MT";
-  font-weight: bold;
-}
- /*end of paragraphs, heading styling*/
-
-
-
-/*Form CSS*/
 
 form{
   margin-right: auto;
   margin-left: auto;
 }
-/*map styling on home page*/
-.map span {
-    position: absolute;
-    border-radius: 50px;/*use to make the marker rounded*/
-    width: 15px;
-    height: 15px;
-    top: 80%;
-    right: 51%;
-    background-color: rgb(68, 82, 127);
-    /*animation:name duration timing function iteration count*/
-    /*timing function linear means the animation will have the same speed from start to end*/
-    animation: highlight 1.5s linear infinite;
+
+ /* Tile of each page animation */
+h1 {
+  text-align: center;
+  text-decoration-style: bold ;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 3s ;
+    animation-name: text;
+    letter-spacing: 5px;
+ }
+
+@keyframes text
+{
+  0% {color:  black; margin-bottom: -40px;}
+  30%{letter-spacing: 20px; margin-bottom: -40px;}
 }
-@keyframes highlight {
-    100% {
-        /*At 100% increase size of marker by 5 and make opacity to zero so this gives a fading effect*/
-        transform: scale(5);
-        opacity: 0;
-    }
+ 
+/* animantion typewriter for the h3 titles Name of places */
+
+.typewriter
+{
+  position: relative;
 }
-/*the rst of the classes are for setting the positions of the markers*/
-.map .marker2 {
-    right: 36%;
-    top: 99%;
+.typewriter::after
+{
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: rgb(42, 42, 42);
+  background-color:rgb(42, 42, 42) ;
+  width: 100%;
+  animation: typing 3s alternate forwards ;
+}
+@keyframes typing
+{
+  to{
+      width: 0%;
+  }
 }
 
-.map .marker3 {
-    right: 40%;
-    top: 90%;
+/* animation for the texts */
+p {
+  animation-duration: 2.5s;
+  animation-name: slidein;
 }
+@keyframes slidein {
+  from {
+    margin-left: 60%;
+    width: 20%;
+  }
 
-.map .marker4 {
-    top: 110%;
-    right: 32%;
-}
-
-.map .marker5 {
-    top: 70%;
-    right: 47%;
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
