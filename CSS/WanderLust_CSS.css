@@ -297,7 +297,7 @@ footer {
   text-align: center;
   color: rgb(170, 169, 169);
   background-color:rgb(42, 42, 42) ;
-  width: 55%;
+  width: 65%;
   border-radius: 10px;
   padding: 15px;
   margin-right: auto;
@@ -368,11 +368,6 @@ h1 {
   font-family: "Bodoni MT";
   font-weight: bold;
 }
-
-/*hilighting text styling*/
-::selection{
-  background: rgb(123, 133, 166);
-}
  /*end of paragraphs, heading styling*/
 
 
@@ -423,19 +418,87 @@ form{
     top: 70%;
     right: 47%;
 }
+/* animation for the texts */
+p {
+  animation-duration: 2.5s;
+  animation-name: slidein;
+}
+@keyframes slidein {
+  from {
+    margin-left: 60%;
+    width: 20%;
+  }
 
-
-/*Animation*/
-
-/*logo Animation*/
-.logo-img {
-  animation-name: fadeInAnimation ;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 
-@keyframes fadeInAnimation {
+ /* Tile of each page animation */
+h1 {
+  text-align: center;
+  text-decoration-style: bold ;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    animation: text 3s ;
+    animation-name: text;
+    letter-spacing: 5px;
+ }
+
+@keyframes text
+{
+  0% {color:  black; margin-bottom: -40px;}
+  30%{letter-spacing: 20px; margin-bottom: -40px;}
+}
+ 
+/* animantion typewriter for the h3 titles Name of places */
+
+.typewriter
+{
+  position: relative;
+}
+.typewriter::after
+{
+  content: '|';
+  position: absolute;
+  right: 0;
+  color: rgb(42, 42, 42);
+  background-color:rgb(42, 42, 42) ;
+  width: 100%;
+  animation: typing 3s alternate forwards ;
+}
+@keyframes typing
+{
+  to{
+      width: 0%;
+  }
+}
+/* logo animation */
+.logo-img{
+  animation-name: fadeInAnimation;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
   0% {opacity: 0;}
-  100% {opacity: 1;width: 35%;}
+  100%{opacity: 1;}
+}
+/* text in h2 animation */
+  .zoom-in-zoom-out
+  {
+    animation: zoom-in-zoom-out 0.8s;
+  }
+@keyframes zoom-in-zoom-out
+{
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  50% {
+    transform: scale(1.5,1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }
