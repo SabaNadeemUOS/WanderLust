@@ -9,34 +9,61 @@
 </head>
 <body>
     <div>
-        <a href="Home.html"><img class ="logo-img" src="Images/Logo.png" alt="logo" ></a>
+        <a href="Home.html"><img class="logo-img" src="Images/Logo.png" alt="logo"></a>
         <nav>
             <ul class="nav-list1">
-                <li>UAE
-                <ul class="nav-list2"><li><a href="UAE-History.html">History</a></li>
-                <li><a href="UAE-Places.html">Places</a></li></ul></li>
+                <li>
+                    UAE
+                    <ul class="nav-list2">
+                        <li><a href="UAE-History.html">History</a></li>
+                        <li><a href="UAE-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>UK
-                <ul class="nav-list2"><li><a href="UK-History.html">History</a></li>
-                <li><a href="UK-Places.html">Places</a></li></ul></li>
+                <li>
+                    UK
+                    <ul class="nav-list2">
+                        <li><a href="UK-History.html">History</a></li>
+                        <li><a href="UK-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Turkey
-                <ul class="nav-list2"><li><a href="Turkey-History.html">History</a></li>
-                <li><a href="Turkey-Places.html">Places</a></li></ul></li>
+                <li>
+                    Turkey
+                    <ul class="nav-list2">
+                        <li><a href="Turkey-History.html">History</a></li>
+                        <li><a href="Turkey-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Maldives
-                <ul class="nav-list2"><li><a href="Maldives-History.html">History</a></li>
-                <li><a href="Maldives-Places.html">Places</a></li></ul></li>
+                <li>
+                    Maldives
+                    <ul class="nav-list2">
+                        <li><a href="Maldives-History.html">History</a></li>
+                        <li><a href="Maldives-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Norway
-                <ul class="nav-list2"><li><a href="Norway-History.html">History</a></li>
-                <li><a href="Norway-Places.html">Places</a></li></ul></li>
+                <li>
+                    Norway
+                    <ul class="nav-list2">
+                        <li><a href="Norway-History.html">History</a></li>
+                        <li><a href="Norway-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
                 <li><a href="About-Us.html">About Us</a></li>
             </ul>
         </nav>
     </div>
-
+    <table style="width: 150px; height: 100px;position:fixed; bottom: 120px; right: 30px;">
+        <caption>Click one of these colors to change the backgorund color!Refresh to change back!</caption>
+        <tr>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: beige;"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: rgb(68, 82, 127);"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color:aquamarine;"></td>
+        </tr>
+    </table>
 
     <div>
         <div>
@@ -101,9 +128,9 @@
                 <p class="footertext">&copy;Copyright</p>
             </footer>
         </div>
-     </div>
+    </div>
 
-     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
 </body>
 </html>

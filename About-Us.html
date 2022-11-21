@@ -31,35 +31,40 @@
         <a href="Home.html"><img class="logo-img" src="Images/Logo.png" alt="logo"></a>
         <nav>
             <ul class="nav-list1">
-                <li>UAE
+                <li>
+                    UAE
                     <ul class="nav-list2">
                         <li><a href="UAE-History.html">History</a></li>
                         <li><a href="UAE-Places.html">Places</a></li>
                     </ul>
                 </li>
 
-                <li>UK
+                <li>
+                    UK
                     <ul class="nav-list2">
                         <li><a href="UK-History.html">History</a></li>
                         <li><a href="UK-Places.html">Places</a></li>
                     </ul>
                 </li>
 
-                <li>Turkey
+                <li>
+                    Turkey
                     <ul class="nav-list2">
                         <li><a href="Turkey-History.html">History</a></li>
                         <li><a href="Turkey-Places.html">Places</a></li>
                     </ul>
                 </li>
 
-                <li>Maldives
+                <li>
+                    Maldives
                     <ul class="nav-list2">
                         <li><a href="Maldives-History.html">History</a></li>
                         <li><a href="Maldives-Places.html">Places</a></li>
                     </ul>
                 </li>
 
-                <li>Norway
+                <li>
+                    Norway
                     <ul class="nav-list2">
                         <li><a href="Norway-History.html">History</a></li>
                         <li><a href="Norway-Places.html">Places</a></li>
@@ -71,7 +76,14 @@
         </nav>
     </div>
 
-
+    <table style="width: 150px; height: 100px;position:fixed; bottom: 120px; right: 30px;">
+        <caption>Click one of these colors to change the backgorund color!Refresh to change back!</caption>
+        <tr>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: beige;"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: rgb(68, 82, 127);"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color:aquamarine;"></td>
+        </tr>
+    </table>
     <div>
 
 
@@ -201,22 +213,25 @@
                 </h4>
 
                 <p>
-                    <label class="relative">Name: <input id="name" style="border-radius: 10px;" type = "text"></label>
+                    <label class="relative">Name: <input id="name" style="border-radius: 10px;" type="text"></label>
                 </p>
                 <p>
-                    <label class="relative">E-mail: <input id="email" style="border-radius: 10px;" type = "email"></label>
+                    <label class="relative">E-mail: <input id="email" style="border-radius: 10px;" type="email"></label>
                 </p>
 
-                <p class="relative"><label for="txtList">How would you rate us:
-            <input style="border-radius: 10px;" type = "text" id = "txtList"
-               placeholder = "Rating" list = "rating" >
-            <datalist id = "rating">
-               <option value = "Wonderful">
-               <option value = "Very Good">
-               <option value = "Good">
-               <option value = "Bad">
-            </datalist>
-         </label></p>
+                <p class="relative">
+                    <label for="txtList">
+                        How would you rate us:
+                        <input style="border-radius: 10px;" type="text" id="txtList"
+                               placeholder="Rating" list="rating">
+                        <datalist id="rating">
+                            <option value="Wonderful">
+                            <option value="Very Good">
+                            <option value="Good">
+                            <option value="Bad">
+                        </datalist>
+                    </label>
+                </p>
 
 
 
@@ -225,7 +240,7 @@
                 </h4>
 
                 <p class="relative">
-                    <label>Comments:<br><textarea id="comment" style="border-radius: 10px;" rows="3" cols = "50" placeholder = "Enter your coments here."></textarea></label>
+                    <label>Comments:<br><textarea id="comment" style="border-radius: 10px;" rows="3" cols="50" placeholder="Enter your coments here."></textarea></label>
                 </p>
 
                 <p class="relative">
@@ -243,16 +258,20 @@
             <footer>
                 <p class="footertext">Contact Us</p>
                 <ul class="footerlist">
-                    <li><img class="footer-img" src="Images/instagram.png" alt="Instagram">
+                    <li>
+                        <img class="footer-img" src="Images/instagram.png" alt="Instagram">
                         <div class="tooltip">WanderLust.official<span class="tooltiptext">Click here to go to our instagram page!</span></div>
                     </li>
-                    <li><img class="footer-img" src="Images/phone.png" alt="phone">
+                    <li>
+                        <img class="footer-img" src="Images/phone.png" alt="phone">
                         <div class="tooltip">0501234567<span class="tooltiptext">Use our number to call us!</span></div>
                     </li>
-                    <li><img class="footer-img" src="Images/email.png" alt="email">
+                    <li>
+                        <img class="footer-img" src="Images/email.png" alt="email">
                         <div class="tooltip">contactUs@WanderLust.com<span class="tooltiptext">Click here to email us!</span></div>
                     </li>
-                    <li><img class="footer-img" src="Images/twitter.png" alt="twitter">
+                    <li>
+                        <img class="footer-img" src="Images/twitter.png" alt="twitter">
                         <div class="tooltip">WanderLust.official<span class="tooltiptext">Click here to send us a tweet!</span></div>
                     </li>
                 </ul>

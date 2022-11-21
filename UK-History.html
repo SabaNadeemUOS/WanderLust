@@ -9,41 +9,68 @@
 </head>
 <body>
     <div>
-        <a href="Home.html"><img class ="logo-img" src="Images/Logo.png" alt="logo" ></a>
+        <a href="Home.html"><img class="logo-img" src="Images/Logo.png" alt="logo"></a>
         <nav>
             <ul class="nav-list1">
-                <li>UAE
-                <ul class="nav-list2"><li><a href="UAE-History.html">History</a></li>
-                <li><a href="UAE-Places.html">Places</a></li></ul></li>
+                <li>
+                    UAE
+                    <ul class="nav-list2">
+                        <li><a href="UAE-History.html">History</a></li>
+                        <li><a href="UAE-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>UK
-                <ul class="nav-list2"><li><a href="UK-History.html">History</a></li>
-                <li><a href="UK-Places.html">Places</a></li></ul></li>
+                <li>
+                    UK
+                    <ul class="nav-list2">
+                        <li><a href="UK-History.html">History</a></li>
+                        <li><a href="UK-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Turkey
-                <ul class="nav-list2"><li><a href="Turkey-History.html">History</a></li>
-                <li><a href="Turkey-Places.html">Places</a></li></ul></li>
+                <li>
+                    Turkey
+                    <ul class="nav-list2">
+                        <li><a href="Turkey-History.html">History</a></li>
+                        <li><a href="Turkey-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Maldives
-                <ul class="nav-list2"><li><a href="Maldives-History.html">History</a></li>
-                <li><a href="Maldives-Places.html">Places</a></li></ul></li>
+                <li>
+                    Maldives
+                    <ul class="nav-list2">
+                        <li><a href="Maldives-History.html">History</a></li>
+                        <li><a href="Maldives-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Norway
-                <ul class="nav-list2"><li><a href="Norway-History.html">History</a></li>
-                <li><a href="Norway-Places.html">Places</a></li></ul></li>
+                <li>
+                    Norway
+                    <ul class="nav-list2">
+                        <li><a href="Norway-History.html">History</a></li>
+                        <li><a href="Norway-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
                 <li><a href="About-Us.html">About Us</a></li>
             </ul>
         </nav>
     </div>
-
+    <table style="width: 150px; height: 100px;position:fixed; bottom: 120px; right: 30px;">
+        <caption>Click one of these colors to change the backgorund color!Refresh to change back!</caption>
+        <tr>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: beige;"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: rgb(68, 82, 127);"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color:aquamarine;"></td>
+        </tr>
+    </table>
 
     <div>
         <div>
 
             <h1>United Kingdom History</h1>
 
-           <iframe class="google-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9555272.909733934!2d-13.430602410876915!3d54.21849236151423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2sae!4v1667248157017!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="google-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9555272.909733934!2d-13.430602410876915!3d54.21849236151423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2sae!4v1667248157017!5m2!1sen!2sae" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <h2 class="zoom-in-zoom-out">Brief Overview of the History of United Kingdom</h2>
             <p>
                 The United Kingdom is an island nation located in the Atlantic Ocean just off the coast of France. It is actually a union of four countries including England, Northern Ireland, Scotland, and Wales.
@@ -77,7 +104,7 @@
         <div>
             <h2 class="zoom-in-zoom-out">UK Currency</h2>
             <p>
-               Sterling is the currency of the United Kingdom and nine of its associated territories. The pound is the main unit of sterling, and the word "pound" is also used to refer to the British currency generally, often qualified in international contexts as the British pound or the pound sterling.
+                Sterling is the currency of the United Kingdom and nine of its associated territories. The pound is the main unit of sterling, and the word "pound" is also used to refer to the British currency generally, often qualified in international contexts as the British pound or the pound sterling.
             </p>
             <figure>
                 <img src="Images/Bank_of_England_50_Series_G_obverse.jpg" alt="Currency" style="width:50%;">
@@ -98,9 +125,9 @@
                 <p class="footertext">&copy;Copyright</p>
             </footer>
         </div>
-     </div>
+    </div>
 
-     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
 </body>
 </html>
