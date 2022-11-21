@@ -9,44 +9,71 @@
 </head>
 <body>
     <div>
-        <a href="Home.html"><img class ="logo-img" src="Images/Logo.png" alt="logo" ></a>
+        <a href="Home.html"><img class="logo-img" src="Images/Logo.png" alt="logo"></a>
         <nav>
             <ul class="nav-list1">
-                <li>UAE
-                <ul class="nav-list2"><li><a href="UAE-History.html">History</a></li>
-                <li><a href="UAE-Places.html">Places</a></li></ul></li>
+                <li>
+                    UAE
+                    <ul class="nav-list2">
+                        <li><a href="UAE-History.html">History</a></li>
+                        <li><a href="UAE-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>UK
-                <ul class="nav-list2"><li><a href="UK-History.html">History</a></li>
-                <li><a href="UK-Places.html">Places</a></li></ul></li>
+                <li>
+                    UK
+                    <ul class="nav-list2">
+                        <li><a href="UK-History.html">History</a></li>
+                        <li><a href="UK-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Turkey
-                <ul class="nav-list2"><li><a href="Turkey-History.html">History</a></li>
-                <li><a href="Turkey-Places.html">Places</a></li></ul></li>
+                <li>
+                    Turkey
+                    <ul class="nav-list2">
+                        <li><a href="Turkey-History.html">History</a></li>
+                        <li><a href="Turkey-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Maldives
-                <ul class="nav-list2"><li><a href="Maldives-History.html">History</a></li>
-                <li><a href="Maldives-Places.html">Places</a></li></ul></li>
+                <li>
+                    Maldives
+                    <ul class="nav-list2">
+                        <li><a href="Maldives-History.html">History</a></li>
+                        <li><a href="Maldives-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
-                <li>Norway
-                <ul class="nav-list2"><li><a href="Norway-History.html">History</a></li>
-                <li><a href="Norway-Places.html">Places</a></li></ul></li>
+                <li>
+                    Norway
+                    <ul class="nav-list2">
+                        <li><a href="Norway-History.html">History</a></li>
+                        <li><a href="Norway-Places.html">Places</a></li>
+                    </ul>
+                </li>
 
                 <li><a href="About-Us.html">About Us</a></li>
             </ul>
         </nav>
     </div>
-
+    <table style="width: 150px; height: 50px;position:fixed; top: 250px; left: 30px;">
+        <caption>Click to change the backgorund color!Refresh to change back!</caption>
+        <tr>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: beige; border-radius: 50%;"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: rgb(68, 82, 127); border-radius: 50%;"></td>
+            <td onmousedown="changebackgroundcolor(this.style.backgroundColor)" style="background-color: aquamarine; border-radius: 50%;"></td>
+        </tr>
+    </table>
 
     <div>
 
         <h1>Norway History</h1>
         <div>
             <iframe class="google-map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7424526.95890518!2d0.7372287557177756!3d62.97922242761074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x461268458f4de5bf%3A0xa1b03b9db864d02b!2sNorway!5e0!3m2!1sen!2sus!4v1667141068490!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           <h2 class="zoom-in-zoom-out">Overview History of Norway</h2>
+            <h2 class="zoom-in-zoom-out">Overview History of Norway</h2>
             <p>
                 People began settling in Norway very early - in 9000 BC, in fact. This was after the end of the first ice age, so it was now an inhabitable location. Settlers survived by hunting and fishing animals such as seal, deer, elk and whales.
-                 Farming didn't become prominent until 500 BC, which was known as the bronze age. This time period got its name from the various weapons and jewelry created.
+                Farming didn't become prominent until 500 BC, which was known as the bronze age. This time period got its name from the various weapons and jewelry created.
                 Norway didn't achieve full independence until 1905 when Haakon VII was crowned the King of Norway. Before then, the country was a dependency under Denmark until 1814, then it entered into a new union with Sweden. Not shortly after Norway's official independence, women were given the right to vote in local elections in 1907, then in national elections in 1913.
 
             </p>
@@ -92,9 +119,9 @@
                 <p class="footertext">&copy;Copyright</p>
             </footer>
         </div>
-     </div>
+    </div>
 
-     <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 
 </body>
 </html>

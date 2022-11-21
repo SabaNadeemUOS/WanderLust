@@ -19,6 +19,9 @@ var goidArray = ["Enter your name please",
 
 var goidText;
 
+function changebackgroundcolor(bg)
+{ document.body.style.background = bg; }//This function is used to change the background color of the website
+
 function init() {
     goidText = document.getElementById("goidText");
 
