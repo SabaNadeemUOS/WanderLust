@@ -32,7 +32,19 @@ function init() {
     registerListenrs(document.getElementById("comment"), 3);
     registerListenrs(document.getElementById("submit"), 4);
     registerListenrs(document.getElementById("clear"), 5);
-
+    var myForm = document.getElementById( "myForm" );
+    myForm.addEventListener( "submit", 
+       function()
+       {                                                         
+          return confirm( "Are you sure you want to submit?" );  
+       }, // end anonymous function
+       false );
+    myForm.addEventListener( "clear", 
+       function()
+       {                                                         
+          return confirm( "Are you sure you want to clear?" );  
+       },
+       false );
 }
 
 function registerListenrs(object, messageNumber) {
