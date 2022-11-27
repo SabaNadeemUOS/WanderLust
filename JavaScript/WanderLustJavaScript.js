@@ -12,8 +12,8 @@ function topFunction() {
 var goidArray = ["Enter your name please",
     "Enter you e-mail please",
     "Rate us please",
-    "Enter your comment here please",
-    "Clck the button to submit the form",
+    "Enter your comments here please",
+    "Click this button to submit the form",
     "Click this button if you want to clear the form",
     ""
 ];
@@ -32,20 +32,42 @@ function init() {
     registerListenrs(document.getElementById("comment"), 3);
     registerListenrs(document.getElementById("submit"), 4);
     registerListenrs(document.getElementById("clear"), 5);
+
+    
     var myForm = document.getElementById( "myForm" );
     myForm.addEventListener( "submit", 
        function()
        {                                                         
-          return confirm( "Are you sure you want to submit?" );  
+        let popup = document.getElementById("popup");
+                                    
+        if(confirm( "Are you sure you want to submit?" )== true)
+        {
+        popup.classList.add("open-popup");
+        var x=window.scrollX;
+        var y=window.scrollY;
+        window.onscroll=function(){window.scrollTo(x, y);};
+        }
+
        }, // end anonymous function
        false );
-    myForm.addEventListener( "clear", 
+
+
+    myForm.addEventListener( "reset", 
        function()
        {                                                         
           return confirm( "Are you sure you want to clear?" );  
        },
        false );
+     
 }
+
+function closePopup()
+        {
+            let popup = document.getElementById("popup");
+
+            popup.classList.remove("open-popup");
+            window.onscroll=function(){};
+        }
 
 function registerListenrs(object, messageNumber) {
 
