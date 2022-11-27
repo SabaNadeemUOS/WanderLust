@@ -305,7 +305,7 @@ footer {
   box-shadow: 5px 5px 20px;
   }
 
-  body p:not(footer p, .row p, form p), .discription-list{
+  body p:not(footer p, .row p, form p, .popupContainer p), .discription-list{
     width: 50%;
     position: relative;
     background-color: rgb(234, 233, 233);
@@ -322,7 +322,7 @@ footer {
 
   
 
-  h2:not(.row h2) {
+  h2:not(.row h2, .popupContainer h2) {
     margin-top: 100px;
     margin-bottom: 20px;
     padding: 10px;
