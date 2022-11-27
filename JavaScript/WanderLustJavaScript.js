@@ -14,7 +14,8 @@ var goidArray = ["Enter your name please",
     "Rate us please",
     "Enter your comment here please",
     "Clck the button to submit the form",
-    "Click this button if you want to clear the form"
+    "Click this button if you want to clear the form",
+    ""
 ];
 
 var goidText;
@@ -37,9 +38,14 @@ function init() {
 function registerListenrs(object, messageNumber) {
 
     object.addEventListener("focus",
-        function() { goidText.innerHTML = goidArray[messageNumber] }, false);
-
+        function() { goidText.innerHTML = goidArray[messageNumber];
+            object.style.backgroundColor = 'lightgray';
+        }, false);
+        
     object.addEventListener("blur",
-        function() { goidText.innerHTML = goidArray[6] }, false);
-}
+        function() { goidText.innerHTML = goidArray[6];
+            object.style.backgroundColor = 'white';
+        }, false);
+} 
+
 window.addEventListener("load", init, false);
