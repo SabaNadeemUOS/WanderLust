@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="Images/icon.jpg">
     <!-- This code is used to add a small icon next to the title-->
     <link rel="stylesheet" type="text/css" href="CSS/WanderLust_CSS.css">
+    <link rel ="stylesheet" href="CSS/popup.css">
     <script src="JavaScript/WanderLustJavaScript.js"></script>
     <style>
         form {
@@ -207,7 +208,7 @@
 
 
         <div>
-            <form method="post" id="myForm">
+            <form method="post" id="myForm" onsubmit="return false">
                 <h4 class="relative" style="color:rgb(19, 27, 115);">
                     please fill this feedback form
                 </h4>
@@ -250,6 +251,16 @@
                 <p id="goidText" style="text-align: center;"></p>
                 <br>
             </form>
+
+            <div id="thankyouCard" class="popupContainer">
+                <div class="popup" id="popup">
+                <img src="Images/tick.png">
+                <h2>Thank You!</h2>
+                <p>Your comment has been successfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK </button>
+                </div>
+            </div>
+
 
 
         </div>
